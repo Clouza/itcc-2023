@@ -1,0 +1,77 @@
+:root {
+    --blue-50: #EFF4FF;
+    --blue-100: #DBE6FE;
+    --blue-200: #BFD3FE;
+    --blue-300: #93B4FD;
+    --blue-400: #6090FA;
+    --blue-500: #3B76F6;
+    --blue-600: #2563EB;
+    --blue-700: #1D58D8;
+    --blue-800: #1E4BAF;
+    --blue-900: #1E408A;
+    --blue-950: #1E408A;
+    --black-950: #020617;
+}
+
+* {
+    color: var(--black-950);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+a {
+    transition-duration: .3s;
+}
+
+a:hover {
+    color: var(--blue-600);
+    transition-duration: .3s;
+}
+
+/* fonts */
+.normal {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semi-bold {
+    font-weight: 500;
+}
+
+/* utils */
+.mt-5 {
+    margin-top: 5rem;
+}
+.unlink {
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.debug {
+    border: 2px dashed black;
+}

@@ -1,0 +1,74 @@
+.hero {
+    height: 75vh;
+    background-image: url('../../public/assets/banner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+}
+
+.hero-content>h1>span {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    background-color: #2563EB;
+    padding: .2rem .5rem;
+    display: inline-block;
+    margin: .2rem 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    margin: auto 6rem;
+}
+
+.search-container {
+    margin-top: 1rem;
+    display: flex;
+    margin-bottom: .2rem;
+}
+
+.search-container>input {
+    width: 100%;
+    padding: .5rem;
+    outline: none;
+    border: 2px solid #2563EB;
+}
+
+.search-container>a>i {
+    padding: .5rem;
+    border: 2px solid #2563EB;
+    background-color: #2563EB;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.ps-popular-service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ps-popular-service {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ps-popular-service > a {
+    padding: 2rem;
+    min-width: 4rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 2px dashed #DBE6FE;
+}
+
+.ps-popular-service > a:hover {
+    background-color: #DBE6FE;
+    border: 2px solid transparent;
+}
