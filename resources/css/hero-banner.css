@@ -72,3 +72,61 @@
     background-color: #DBE6FE;
     border: 2px solid transparent;
 }
+
+.pb-professional-banner-container {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-image: linear-gradient(to right, #2563EB, #BFD3FE);
+}
+
+.pb-professional-banner > * {
+    color: white;
+}
+
+.pb-professional-banner > ul {
+    padding: .5rem 0;
+}
+
+.pb-professional-banner > ul > li {
+    color: white;
+}
+
+.testimoni-banner {
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    background-color: #DBE6FE;
+}
+
+.testimoni-profile {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 1px black;
+}
+
+.testimoni-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.testimoni-company > img {
+    width: 150px;
+    filter: grayscale(100%);
+    transition-duration: .3s;
+}
+
+.testimoni-company > img:hover {
+    width: 150px;
+    filter: grayscale(0);
+    transition-duration: .3s;
+}

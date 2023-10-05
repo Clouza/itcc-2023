@@ -30,7 +30,31 @@ a:hover {
     transition-duration: .3s;
 }
 
+section {
+    padding: 4rem;
+}
+
 /* fonts */
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.text-2xl {
+    font-size: 2rem;
+}
+
+.text-3xl {
+    font-size: 2.5rem;
+}
+
+.text-4xl {
+    font-size: 3rem;
+}
+
+.text-white {
+    color: white;
+}
+
 .normal {
     font-style: normal;
     font-weight: 400;
@@ -56,6 +80,19 @@ a:hover {
 .mt-5 {
     margin-top: 5rem;
 }
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
 .unlink {
     text-decoration: none;
 }
