@@ -81,6 +81,10 @@ section {
     margin-top: 5rem;
 }
 
+.mb-0-5 {
+    margin-bottom: .5rem;
+}
+
 .mb-1 {
     margin-bottom: 1rem;
 }
@@ -111,4 +115,11 @@ section {
 
 .debug {
     border: 2px dashed black;
+}
+
+/* size */
+@media screen and (min-width: 1366px) {
+    body {
+        padding: 0 16rem;
+    }
 }

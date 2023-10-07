@@ -76,7 +76,8 @@
 .pb-professional-banner-container {
     margin: 5rem 0;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     gap: 2rem;
     background-image: linear-gradient(to right, #2563EB, #BFD3FE);
 }
@@ -129,4 +130,76 @@
     width: 150px;
     filter: grayscale(0);
     transition-duration: .3s;
+}
+
+.cta-learn-more {
+    background-color: #020617;
+    color: white;
+    padding: 1rem 2rem;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.cta-learn-more:hover {
+    background-color: white;
+    color: #020617;
+}
+
+.grow-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.grow-card {
+    border: 1px solid #020617;
+    max-width: 15rem;
+    padding: 1rem;
+}
+
+.grow-card > h4 {
+    color: #2563EB;
+}
+
+.grow-card > p {
+    margin: .4rem 0;
+}
+
+.ex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta-registration {
+    border: 2px solid #020617;
+    padding: 1rem 2rem;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.cta-registration:hover {
+    background-color: #020617;
+    color: white;
+}
+
+.mb-maestro-banner-container {
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-image: linear-gradient(to right, #2563EB, #BFD3FE);
+}
+
+.mb-maestro-banner > * {
+    color: white;
+}
+
+.mb-maestro-banner > ul {
+    padding: .5rem 0;
+}
+
+.mb-maestro-banner > ul > li {
+    color: white;
 }
