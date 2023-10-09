@@ -1,0 +1,229 @@
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5rem;
+}
+
+.profile-left {
+    grid-column: span 1 / span 2;
+}
+
+.profile-left > div {
+    display: flex;
+    gap: .5rem;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.profile-left > div > img {
+    aspect-ratio: 1;
+    border-radius: 100%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+}
+
+.profile-left > button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    background-color: #EFF4FF;
+    transition-duration: .3s;
+}
+
+.profile-left > button:hover {
+    background-color: #2563EB;
+    transition-duration: .3s;
+    color: white;
+}
+
+.profile-left > button > i {
+    font-size: 2rem;
+    color: #2563EB;
+}
+
+.profile-left > button:hover > i {
+    color: white;
+}
+
+.profile-left > button.active, .profile-left > button.active > i {
+    color: white;
+    background-color: #2563EB;
+}
+
+/* profile right */
+.profile-settings {
+    grid-column: span 3 / span 5;
+}
+
+.profile-settings > hr {
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin: .5rem 0 2rem 0;
+}
+
+.profile-settings > div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-settings > div > img {
+    aspect-ratio: 1;
+    border-radius: 100%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+    align-self: flex-start;
+}
+
+.profile-settings > div > div {
+    width: 100%;
+}
+
+/* profile services */
+.profile-services {
+    grid-column: span 3 / span 5;
+}
+
+.profile-services > hr {
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin: .5rem 0 2rem 0;
+}
+
+.profile-service-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.profile-service-card {
+    border: 2px solid black;
+    padding: 1rem;
+    width: 20%;
+}
+
+.profile-service-card > a {
+    margin: 1rem 0 0 0;
+}
+
+/* profile reviews */
+.profile-reviews {
+    grid-column: span 3 / span 5;
+}
+
+.profile-reviews > hr {
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin: .5rem 0 2rem 0;
+}
+
+.profile-reviews-users {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.profile-reviews-user-card {
+    border: 2px solid black;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.profile-reviews-user-card > div > h3 {
+    margin-bottom: 1rem;
+}
+
+.profile-reviews-user-card > div:nth-child(1) {
+    width: 30%;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* profile-wallet */
+.profile-wallet {
+    grid-column: span 3 / span 5;
+}
+
+.profile-wallet > hr {
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin: .5rem 0 2rem 0;
+}
+
+/* profile-privacy */
+.profile-privacy {
+    grid-column: span 3 / span 5;
+}
+
+.profile-privacy > hr {
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin: .5rem 0 2rem 0;
+}
+
+/* utils */
+.profile-form-group > label {
+    font-size: 1.1rem;
+}
+
+.profile-form-group > input {
+    padding: .4rem .8rem;
+    width: 100%;
+    margin: .4rem 0;
+    outline: none;
+    border: 2px solid #020617;
+    transition-duration: .3s;
+}
+
+.profile-form-group > select {
+    padding: .4rem .8rem;
+    width: 100%;
+    margin: .4rem 0;
+    outline: none;
+    border: 2px solid #020617;
+    background-color: #EFF4FF;
+}
+
+.profile-form-group > select:disabled {
+    padding: .4rem .8rem;
+    width: 100%;
+    margin: .4rem 0;
+    outline: none;
+    border: 2px solid hsla(229, 84%, 5%, .5);
+    color: hsla(229, 84%, 5%, .8);
+    background-color: hsla(229, 84%, 5%, .1);
+}
+
+.profile-form-group > input:focus {
+    border: 2px solid #2563EB;
+    transition-duration: .3s;
+}
+
+.profile-form-group > select:focus {
+    border: 2px solid #2563EB;
+    transition-duration: .3s;
+    background-color: #EFF4FF;
+}
+
+.profile-button-save {
+    padding: .5rem 2rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    border: none;
+    background-color: #2563EB;
+    color: white;
+}
+
+.profile-button-save:active {
+    padding: .5rem 2rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    border: none;
+    background-color: #1D58D8;
+    color: white;
+}

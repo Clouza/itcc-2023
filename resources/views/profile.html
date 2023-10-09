@@ -1,0 +1,196 @@
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="../../vendor/boxicons-2.0.7/css/boxicons.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/profile.css">
+
+<!-- profile -->
+<section>
+    <h1>Profile</h1>
+    <div class="profile-container">
+        <div class="profile-left">
+            <div>
+                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" width="20%" alt="profile picture">
+                <div>
+                    Hello,
+                    <b>Wahyu Siwananda</b>
+                </div>
+            </div>
+            <button class="active">
+                <i class='bx bx-cog'></i>
+                Settings
+            </button>
+            <button>
+                <i class='bx bxs-dashboard'></i>
+                Services
+            </button>
+            <button>
+                <i class='bx bx-star'></i>
+                Reviews
+            </button>
+            <button>
+                <i class='bx bx-wallet'></i>
+                Wallet
+            </button>
+            <button>
+                <i class='bx bx-lock-alt'></i>
+                Privacy
+            </button>
+        </div>
+
+        <div class="profile-settings d-none">
+            <h2>Personal Information</h2>
+            <hr>
+            <div>
+                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" width="20%" alt="profile picture">
+
+                <div>
+                    <div class="profile-form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" value="Wahyu Siwananda">
+                    </div>
+    
+                    <div class="profile-form-group">
+                        <label for="program">Program</label>
+                        <select id="program" disabled>
+                            <option value="professional">Professional</option>
+                            <option value="experimenting" selected>Experimenting</option>
+                            <option value="maestro">Maestro</option>
+                        </select>
+                    </div>
+    
+                    <div class="profile-form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="08123456789" value="08123456789">
+                    </div>
+    
+                    <button class="profile-button-save">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-services d-none">
+            <h2>Services</h2>
+            <hr>
+            
+            <div class="profile-service-cards">
+                <div class="profile-service-card">
+                    <h3>Web Design</h3>
+                    <p>Start from: $4</p>
+                    <a href="">Service Detail</a>
+                </div>
+    
+                <div class="profile-service-card">
+                    <h3>Web Development</h3>
+                    <p>Start from: $14</p>
+                    <a href="">Service Detail</a>
+                </div>
+
+                <div class="profile-service-card">
+                    <h3>Web Development</h3>
+                    <p>Start from: $14</p>
+                    <a href="">Service Detail</a>
+                </div>
+                
+                <div class="profile-service-card">
+                    <h3>Web Development</h3>
+                    <p>Start from: $14</p>
+                    <a href="">Service Detail</a>
+                </div>
+                
+                <div class="profile-service-card">
+                    <h3>Web Development</h3>
+                    <p>Start from: $14</p>
+                    <a href="">Service Detail</a>
+                </div>
+                
+                <div class="profile-service-card">
+                    <h3>Web Development</h3>
+                    <p>Start from: $14</p>
+                    <a href="">Service Detail</a>
+                </div>
+                
+                <div class="profile-service-card">
+                    <h3>Web Development</h3>
+                    <p>Start from: $14</p>
+                    <a href="">Service Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-reviews d-none">
+            <h2>Reviews</h2>
+            <hr>
+            
+            <div class="profile-reviews-users">
+                <div class="profile-reviews-user-card">
+                    <div style="background-image: url('https://c4.wallpaperflare.com/wallpaper/362/447/777/movie-blade-runner-2049-ana-de-armas-joi-blade-runner-2049-wallpaper-preview.jpg');"></div>
+                    <div>
+                        <h3>User</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, tenetur!</p>
+                    </div>
+                </div>
+    
+                <div class="profile-reviews-user-card">
+                    <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_3fYfto60JEq-it3nSI-VT2kBJwpCM8zzTQ&usqp=CAU');"></div>
+                    <div>
+                        <h3>User</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, tenetur!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-wallet d-none">
+            <h2>Wallet</h2>
+            <hr>
+            
+            <h3>Current Income</h3>
+            <p class="mb-1">$1023</p>
+
+            <div class="profile-form-group">
+                <label for="bank">Bank</label>
+                <input type="text" id="bank" placeholder="BCA, BNI, or BRI ..." value="BNI" required>
+            </div>
+
+            <div class="profile-form-group">
+                <label for="number">Bank Number</label>
+                <input type="number" id="number" placeholder="**** **** **** ****" value="1234 1234 1234 1234" required>
+            </div>
+
+            <div class="profile-form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Bank Name" value="Wahyu Siwananda" required>
+            </div>
+
+            <button class="profile-button-save">Withdraw</button> 
+        </div>
+
+        <div class="profile-privacy d-none">
+            <h2>Privacy</h2>
+            <hr>
+            
+            <div class="profile-form-group">
+                <label for="email">Email</label>
+                <input type="email" id="bank" placeholder="yourmail@example.com" value="wahyu@gmail.com" required>
+            </div>
+
+            <div class="profile-form-group">
+                <label for="oldPassword">Old Password</label>
+                <input type="password" id="oldPassword" placeholder="****************" required>
+            </div>
+
+            <div class="profile-form-group">
+                <label for="newPassword">New Password</label>
+                <input type="password" id="newPassword" placeholder="****************" required>
+            </div>
+
+            <button class="profile-button-save">Save</button> 
+        </div>
+    </div>
+</section>

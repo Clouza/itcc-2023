@@ -1,14 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flawless</title>
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../vendor/boxicons-2.0.7/css/boxicons.min.css">
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="../resources/css/base.css">
+    <link rel="stylesheet" href="../resources/css/navbar.css">
+    <link rel="stylesheet" href="../resources/css/footer.css">
+    <link rel="stylesheet" href="../resources/css/hero-banner.css">
 </head>
+
 <body>
-    <h1>Flawless</h1>
-    <script src="script.js" defer></script>
+    <nav class="relative">
+        <a href="index.html" class="unlink">Flawless</a>
+        <ul>
+            <li class="navbar-dropdown cursor-pointer">
+                Categories
+                <div>
+                    <a href="#professional">Professional</a>
+                    <a href="#experimenting">Experimenting</a>
+                    <a href="#maestro">Maestro</a>
+                </div>
+            </li>
+            <li>
+                <a href="services.html" class="unlink">Explore</a>
+            </li>
+            <li>
+                <a href="" class="unlink" onclick="registration()">Registration</a>
+            </li>
+            <li class="navbar-dropdown cursor-pointer">
+                English
+                <div class="">
+                    <a href="">English</a>
+                    <a href="">Bahasa</a>
+                </div>
+            </li>
+            <li class="navbar-dropdown cursor-pointer">
+                USD
+                <div class="">
+                    <a href="">USD</a>
+                    <a href="">IDR</a>
+                    <a href="">EUR</a>
+                    <a href="">SGD</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>
+                <span>Just in time</span>
+                <br>
+                <span>No more waiting</span>
+            </h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search for any service" class="hero-input">
+                <a href="services.html"><i class='bx bx-search'></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- popular services -->
+    <section class="mt-5 ps-popular-service-container">
+        <div class="ps-popular-service"> <!-- ps = popular service -->
+            <a href="services.html">Web Development</a>
+            <a href="services.html">Graphic Design</a>
+            <a href="services.html">Mobile App Development</a>
+            <a href="services.html">SEO (Search Engine Optimization)</a>
+        </div>
+
+        <div class="ps-popular-service">
+            <a href="services.html">Content Writing</a>
+            <a href="services.html">Translation</a>
+            <a href="services.html">Social Media Management</a>
+            <a href="services.html">UI/UX Design</a>
+        </div>
+
+        <div class="ps-popular-service">
+            <a href="services.html">Data Analysis</a>
+            <a href="services.html">Software Testing</a>
+            <a href="services.html">Project Management</a>
+            <a href="services.html">Video Editing</a>
+        </div>
+
+        <div class="ps-popular-service">
+            <a href="services.html">E-commerce Design</a>
+            <a href="services.html">Editing and Proofreading</a>
+            <a href="services.html">Animation</a>
+            <a href="services.html">Email Marketing</a>
+        </div>
+
+        <div class="ps-popular-service">
+            <a href="services.html">Business Consultation</a>
+            <a href="services.html">3D Graphics</a>
+            <a href="services.html">Interior Design</a>
+            <a href="services.html">Website Speed Optimization</a>
+        </div>
+    </section>
+
+    <!-- testimoni -->
+    <section>
+        <h2 class="mb-1">What business owner says</h2>
+        <div class="testimoni-banner">
+            <div class="testimoni-profile"
+                style="background-image: url('https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1331&q=80');">
+                a</div>
+            <div>
+                <p class="mb-3" style="text-align: justify;">After deciding to explore freelance services, I was pleasantly surprised by the exceptional results. The freelancers I hired brought a high level of professionalism and expertise to our projects. Their contributions ranged from enhancing our graphic design work and improving our website's search engine ranking to managing our social media campaigns with remarkable effectiveness.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="company" width="20%">
+            </div>
+        </div>
+        <div class="testimoni-company">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="company">
+            <img src="https://indonesia.fb.com/wp-content/themes/2019_facebook_initiatives_startupgarage/assets/images/meta-logo.png" alt="company">
+            <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="company">
+            <img src="https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg" alt="company">
+            <img src="https://www.zohowebstatic.com/sites/default/files/zoho_general_pages/zoho-logo-web.png" alt="company">
+        </div>
+    </section>
+
+    <!-- professional banner -->
+    <section class="pb-professional-banner-container" id="professional">
+        <div class="pb-professional-banner">
+            <h2 class="mb-0-5">Find out how business owner <br> can recognize you</h2>
+            <p class="mb-3">Join Flawless professional</p>
+            <a href="#" class="cta-learn-more" onclick="registration()">Learn More</a>
+        </div>
+        <img src="assets/professional.svg" width="25%" alt="professional">
+    </section>
+
+    <!-- grow -->
+    <section>
+        <h2 class="mb-1">Grow with Flawless</h2>
+        <div class="grow-container">
+            <div class="grow-card">
+                <h4>Web Development</h4>
+                <p>Empower your online presence with professionally crafted websites tailored to your needs.</p>
+                <a href="#" onclick="registration()">Learn More</a>
+            </div>
+
+            <div class="grow-card">
+                <h4>Graphic Design</h4>
+                <p>Elevate your brand's visual identity with stunning logos, posters, and marketing materials.</p>
+                <a href="#" onclick="registration()">Learn More</a>
+            </div>
+
+            <div class="grow-card">
+                <h4>Mobile App Development</h4>
+                <p>Expand your reach by creating mobile apps for Android and iOS platforms.</p>
+                <a href="#" onclick="registration()">Learn More</a>
+            </div>
+
+            <div class="grow-card">
+                <h4>SEO Services</h4>
+                <p>Boost your online visibility with effective Search Engine Optimization strategies.</p>
+                <a href="#" onclick="registration()">Learn More</a>
+            </div>
+
+            <div class="grow-card">
+                <h4>Content Writing</h4>
+                <p>Capture your audience's attention with engaging and high-quality content.</p>
+                <a href="#" onclick="registration()">Learn More</a>
+            </div>
+
+            <div class="grow-card">
+                <h4>Social Media Management</h4>
+                <p>Enhance your online presence and engagement through expert social media management.</p>
+                <a href="#" onclick="registration()">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- experimenting -->
+    <section class="ex-container" id="experimenting">
+        <div>
+            <h2 class="mb-1">First time?</h2>
+            <p class="mb-0-5">Trying Flawless for the first time? do not worry, we got you</p>
+            <ul class="mb-3">
+                <li><i class='bx bx-check'></i> Access to a Variety of Projects</li>
+                <li><i class='bx bx-check'></i> Potential Extra Income</li>
+                <li><i class='bx bx-check'></i> Flexible Schedule</li>
+                <li><i class='bx bx-check'></i> New Experiences</li>
+                <li><i class='bx bx-check'></i> Global Connections</li>
+                <li><i class='bx bx-check'></i> Continuous Learning</li>
+                <li><i class='bx bx-check'></i> Creative Control</li>
+            </ul>
+
+            <a href="" class="cta-registration" onclick="registration()">Registration</a>
+        </div>
+        <img src="assets/experimenting.svg" width="25%" alt="experimenting">
+    </section>
+
+    <!-- maestro banner -->
+    <section class="mb-maestro-banner-container" id="maestro">
+        <div class="mb-maestro-banner">
+            <h2 class="mb-1">Obsessed with your skills? <br> Want a challenge and to be recognized worldwide?</h2>
+            <a href="#" class="cta-learn-more" onclick="registration()">Learn More</a>
+        </div>
+        <div>
+            <h1 class="text-4xl">Maestro</h1>
+            <p>Program by Flawless</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="logo">
+            <h1 class="mb-1">Flawless</h1>
+            <div>
+                <select name="currency" class="mb-0-5">
+                    <option value="USD">USD</option>
+                    <option value="IDR">IDR</option>
+                    <option value="EUR">EUR</option>
+                    <option value="SGD">SGD</option>
+                </select>
+                <select name="language">
+                    <option value="id">Bahasa</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+        <div class="contact">
+            <a href="mailto:info@flawless.com">info@flawless.com</a>
+            <a href="#">About us</a>
+        </div>
+        <div class="menu">
+            <a href="services.html">Services</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="../vendor/jquery v3.6.0/jquery.js"></script>
+    <script src="../resources/js/script.js"></script>
 </body>
+
 </html>

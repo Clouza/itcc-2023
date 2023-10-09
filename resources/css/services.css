@@ -1,0 +1,35 @@
+.services-list-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.services-list-container > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    height: 80vh;
+}
+
+.services-list-container > div:hover > h3 {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, .1);
+    color: white;
+    transition-duration: .3s;
+}
+
+.services-list-container > div > h3 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    transition-duration: .3s;
+}
