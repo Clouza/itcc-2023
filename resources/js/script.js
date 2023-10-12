@@ -2,8 +2,54 @@ const cancelPopUp = (e) => {
     $(e.offsetParent).addClass('d-none');
 }
 
+const backToHome = () => {
+    window.location.href = './index.html';
+}
+
+const cancelPopUpPage = (e) => {
+    $('.login-body').remove();
+    $('.registration').append(`
+        <div class="registration-body">
+            <h2>Registration</h2>
+            <div class="registration-form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Wahyu Siwananda" required>
+            </div>
+
+            <div class="registration-form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="wahyu@gmail.com" required>
+            </div>
+
+            <button class="registration-button-save" onclick="signUpPage(this)">Sign up</button>
+            <button class="registration-button-cancel unlink" onclick="backToHome()">Cancel</button>
+        </div>
+    `);
+}
+
 const signIn = () => {
     window.location.href = './profile.html';
+}
+
+const signUpPage = (e) => {
+    $('.registration-body').remove();
+    $('.registration').append(`
+        <div class="login-body">
+            <h2>Login</h2>
+            <div class="registration-form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="yourmail@example.com" value="wahyu@gmail.com" required>
+            </div>
+
+            <div class="registration-form-group">
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="*******" value="********">
+            </div>
+
+            <button class="registration-button-save unlink" onclick="signIn()">Sign in</button>
+            <button class="registration-button-cancel unlink" onclick="cancelPopUpPage(this)">Cancel</button>
+        </div>
+    `);
 }
 
 const signUp = (e) => {

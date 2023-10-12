@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flawless</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../vendor/boxicons-2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="../resources/css/base.css">
+    <link rel="stylesheet" href="../resources/css/navbar.css">
+    <link rel="stylesheet" href="../resources/css/footer.css">
+    <link rel="stylesheet" href="../resources/css/hero-banner.css">
+</head>
+
+<body style="display: flex; flex-direction: column; justify-content: space-between; height: 100vh;">
+    <nav class="relative">
+        <a href="index.html" class="unlink">Flawless</a>
+        <ul>
+            <li class="navbar-dropdown cursor-pointer">
+                Categories
+                <div>
+                    <a href="#professional">Professional</a>
+                    <a href="#experimenting">Experimenting</a>
+                    <a href="#maestro">Maestro</a>
+                </div>
+            </li>
+            <li>
+                <a href="services.html" class="unlink">Explore</a>
+            </li>
+            <li>
+                <a href="" class="unlink" onclick="registration()">Registration</a>
+            </li>
+            <li class="navbar-dropdown cursor-pointer">
+                English
+                <div class="">
+                    <a href="">English</a>
+                    <a href="">Bahasa</a>
+                </div>
+            </li>
+            <li class="navbar-dropdown cursor-pointer">
+                USD
+                <div class="">
+                    <a href="">USD</a>
+                    <a href="">IDR</a>
+                    <a href="">EUR</a>
+                    <a href="">SGD</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="registration" id="registration" style="position: static;">
+        <div class="registration-body">
+            <h2>Registration</h2>
+            <div class="registration-form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Wahyu Siwananda" required>
+            </div>
+
+            <div class="registration-form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="wahyu@gmail.com" required>
+            </div>
+
+            <button class="registration-button-save" onclick="signUpPage(this)">Sign up</button>
+            <button class="registration-button-cancel unlink" onclick="cancelPopUp(this)">Cancel</button>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="logo">
+            <h1 class="mb-1">Flawless</h1>
+            <div>
+                <select name="currency" class="mb-0-5">
+                    <option value="USD">USD</option>
+                    <option value="IDR">IDR</option>
+                    <option value="EUR">EUR</option>
+                    <option value="SGD">SGD</option>
+                </select>
+                <select name="language">
+                    <option value="id">Bahasa</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+        <div class="contact">
+            <a href="mailto:info@flawless.com">info@flawless.com</a>
+            <a href="#">About us</a>
+        </div>
+        <div class="menu">
+            <a href="services.html">Services</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="../vendor/jquery v3.6.0/jquery.js"></script>
+    <script src="../resources/js/script.js"></script>
+</body>
+
+</html>
